@@ -1,0 +1,70 @@
+
+/* .red-hat-text-<uniquifier> {
+    font-family: "Red Hat Text", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.zain-extralight {
+  font-family: "Zain", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.zain-light {
+  font-family: "Zain", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zain-regular {
+  font-family: "Zain", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-bold {
+  font-family: "Zain", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zain-extrabold {
+  font-family: "Zain", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.zain-black {
+  font-family: "Zain", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.zain-light-italic {
+  font-family: "Zain", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zain-regular-italic {
+  font-family: "Zain", serif;
+  font-weight: 400;
+  font-style: italic;
+}*/
+
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+
+p {
+    font-family: "Zain", "Red-Hat-Text", serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-style: normal;
+}
