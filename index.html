@@ -15,119 +15,316 @@
     <title>Uppgift 2  Skapa CV-sida</title>
 </head>
 <body>
+
     <!-- header -->
     <header>
         <nav>
             <ul>
                 <li><a href="#">Hem</a></li>
                 <li><a href="#">Om mig</a></li>
-                <li><a href=#>Projekt</a></li>
+                <li><a href=#>Portfolio</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </header>
+
     <!-- main -->
     <main>
-        <section id="perfil">
+
+        <!-- Profile -->
+        <section id="profile">
+
+            <!-- Profile picture -->
             <div class="img-container">
                 <img src="./media/Profile-picture.jpeg" alt="José Raúl Tenza Ramírez– Profile picture">
             </div>
+
+            <!-- Text box with short description with link to pop-up CV -->
             <div class="text-container">
                 <h2>José Raúl Tenza Ramírez</h2>
                 <h3>Front-End utvecklare och musiker</h3>
-                <!-- <hr>-->
                 <p>
                     Hej! Jag är José, en profesionell musiker som studerar Front-End utveckling. 
-                    Valthorn <span style='font-size:20px;'>&#128239;</span> är instrumentet jag spelar sedan jag blev 7 år gammal, en gång i tiden. 
-                    Efter jag blev färdigt med min kandidatexamen i musik bestämde jag mig för att flyta till Göteborg och försätta läsa en masterexamen i symfonisk orkesterspel vid Göteborgs Universitet. 
-                    Sedan dess har jag varit frilansande musiker och arbetat i flera orkestrar i Sverige samt utomlands i mer än 10 år. 
-                    Nu känner jag att det är dags att utveckla mig vidare i andra områden och därför läser jag Front-End utvecklingprogrammet på YH Borås.
-                    Andra intressen förutom musik och mjukvaruutveckling som jag har är natur, film och resor.
+                    Valthorn <span style='font-size: 1rem;'>📯</span> är instrumentet jag spelar sedan jag blev 7 år gammal, en gång i tiden. 
+                    Efter att jag tagit examen i musik bestämde jag mig för att försätta min karriär inom musiken och flyttade till Göteborg för att läsa en masterexamen i symfonisk orkesterspel vid Göteborgs Universitet.
+                    Sedan dess har jag varit frilansande musiker och arbetat i flera orkestrar i Sverige samt utomlands under mer än 10 år. 
+                    Nu känner jag att det är dags att utveckla mig vidare i andra områden jag är också nyfiken på. Därför läser jag ett Front-End utvecklingprogramm vid YH Borås.<span style='font-size:1rem;'>🧑‍💻</span>
+                    Andra intressen förutom musik och mjukvaruutveckling jag har är natur, film och resor.
                     <br>
-                    <a href="#">Detaljerad CV</a>
+                    <a href="#detailedCV" class="link">Detaljerad CV</a>
                 </p>
             </div>
-            <div class="CV-container">
-                <h2>Resumé</h2>
-                <!-- <hr> -->
-                <p>
-                    Texto CV
-                </p>
+            
+            <!-- Pop-up CV -->
+            <div id="detailedCV" class="CV-container">
+                <div class="CV-content">
+                    <a href="#" class="close">&times;</a>
+                    <h2>Curriculum Vitae</h2>
+
+                    <h3>Utbildning</h3>
+                        <ul>
+                            <li>FrontEnd React utvecklare vid Yrkeshögskolan Borås <span style='font-size:1rem;'>🇸🇪</span> • Januari 2025 – December 2026.</li>
+                            <li>Konstnärlig masterexamen i musik med inriktning symfoniskt orkesterspel vid Göteborgs Universitet <span style='font-size:1rem;'>🇸🇪</span> • Augusti 2013 – April 2023.</li>
+                            <li>Konstnärlig kandidatexamen i musik med inriktning valthorn vid Conservatorio Superior de música de Murcia <i>Manuel Massotti Littel</i> <span style='font-size:1rem;'>🇪🇸</span> • September 2008 – Juni 2012.</li>
+                        </ul>
+                    <hr>
+
+                    <h3>Arbetslivserfarenhet</h3>
+                    
+                        <ul>
+                            <li>
+                                <h4>Wermland Opera <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                <ul>
+                                    <li>
+                                        Alternerande stämledare samt stämledare valthorn • Tidbegränsad anställning • Augusti 2024 – April 2025.
+                                    </li>
+                                    <li>
+                                        Stämledare och alternerande stämledare valthorn • Regelbunden gäst • Februari 2017 – April 2024.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Göteborgs Operan <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                <ul>
+                                    <li>
+                                        Tutti valthorn med 3:e horn plikt • Tidbegränsad anställning • Augusti 2022 – Juni 2024.
+                                    </li>
+                                    <li>
+                                        Tutti valthorn • Regelbunden gäst • November 2015 – December 2020.
+                                    </li>
+                                    <li>
+                                        Tutti valthorn • Tidbegränsad anställning • Oktober 2019 – Maj 2020.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Göteborgs Symfoniker <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                <ul>
+                                    <li>
+                                        Stämledare, tutti låg, hög och assistent valthorn • Regelbunden gäst • Mars 2014 – Februari 2024.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4></h4>Läckö Slott Sommar Opera <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                <ul>
+                                    <li>
+                                        Stämledare valthorn • Juli 2022.
+                                    </li>
+                                    <li>
+                                        Stämledare valthorn • Juli – Augusti 2020.
+                                    </li>
+                                    <li>
+                                        Stämledare valthorn • Juli – Augusti 2019.
+                                    </li>
+                                    <li>
+                                        Alternerande stämledare valthorn • Juli – Augusti 2018.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Smålands Musik och Teater <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                <ul>
+                                    <li>
+                                        Alternerande stämledare valthorn • Tidbegränsad anställning • Augusti 2021 – Juni 2022.
+                                    </li>
+                                    <li>
+                                        Stämledare och alternerande stämledare valthorn • Regelbunden gäst • November 2017 – April 2024.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Norrköpings Symfoniorkester <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                <ul>
+                                    <li>
+                                        3:e valthorn • Gäst • Januari 2022.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Östgötamusiken <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                <ul>
+                                    <li>
+                                        Stämledare och alternerande stämledare valthorn • Regelbunden gäst • September 2020 – December 2021.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Lucerne Festival Alumni <span style='font-size:1rem;'>🇨🇭</span></h4>
+                                <ul>
+                                    <li>
+                                        Valthorn • Medlem • Februari 2017 – Maj 2019.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Lucerne Festival Orchestra Academy <span style='font-size:1rem;'>🇨🇭</span></h4>
+                                <ul>
+                                    <li>
+                                        Stämledare samt alternerande stämledare valthorn • Akademiker • Augusti – September 2016.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Kristiansand Symfoniorkester <span style='font-size:1rem;'>🇳🇴</span></h4>
+                                <ul>
+                                    <li>
+                                        Assistent valthorn • Gäst • Januari 2015.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Orquesta Sinfónica de la Región de Murcia <span style='font-size:1rem;'>🇪🇸</span></h4>
+                                <ul>
+                                    <li>
+                                        4:e valthorn • Gäst • April – Maj 2012.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Quinteto de Viento 'Iter Musicae' <span style='font-size:1rem;'>🇪🇸</span></h4>
+                                <ul>
+                                    <li>
+                                        Valthorn • Medlem • September 2008 – Augusti 2013.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h4>Orquesta Sinfónica de Jumilla <span style='font-size:1rem;'>🇪🇸</span></h4>
+                                <ul>
+                                    <li>
+                                        Stämledare samt alternerande stämledare valthorn • Medlem • December 2011 – Juli 2013.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <h3>Kompetenser</h3>
+
+                        <h4>Språk:</h4>
+                            <ul>
+                                <li>Spanska <span style='font-size:1rem;'>🇪🇸</span></li>
+                                <li>Svenska <span style='font-size:1rem;'>🇸🇪</span></li>
+                                <li>Engelska <span style='font-size:1rem;'>🇬🇧</span></li>
+                            </ul>
+                </div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projekt</h2>
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
             <div class="projects-container">
 
                 <div class="project-1">
                     <img src="./media/Project-1.png" alt="Projekt 1">
                     <h3>Log in sida</h3>
-                    <p>Det här är mitt första projekt som Front-End utvecklare.<br>
-                    Här skapar jag en enkel log in sida.</p>
+                    <p>
+                        Det här är mitt första projekt som Front-End utvecklare. Här skapar jag en enkel log in sida. Arbetet pågår.
+                    </p>
                     <a href="https://github.com/JoseRaul-TR/F25D-Upgift1-LogIn" target="_blank">Länk till projektets GitHub repository</a>
                 </div>
 
-                <!-- Anadir este proyecto! -->
+                <!-- ** Anadir este proyecto! ** -->
                 <div class="project-2">
                     <img src="ruta-a-imagen-proyecto2.jpg" alt="Projekt 2">
                     <h3>Profilsida</h3>
-                    <p>Mitt andra projekt som Front-End utvecklare är precis den här siddan du läser nu.</p>
+                    <p>
+                        Mitt andra projekt som Front-End utvecklare är precis den här siddan du läser nu.
+                    </p>
                     <a href="https://github.com/JoseRaul-TR/F25D-Uppgift-2-Skapa-CV-sida" target="_blank">Länk till projektets GitHub repository</a>
                 </div>
                 
                 <div class="project-3">
                     <h3>R. Strauss: Eine Alpensinfonie</h3>
-                    <p>Inspelning av Richard Strauss Eine Alpensinfonie med Göteborgs Symfoniorkester under ledning av Kent Nagano.</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/33Z8ldsWlFWfUybGRRmjRZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
+                    <p>
+                        Inspelning av Richard Strauss Eine Alpensinfonie med Göteborgs Symfoniorkester under ledning av Kent Nagano.
+                    </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/33Z8ldsWlFWfUybGRRmjRZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
 
                 <div class="project-4">
                     <h3>R. Strauss: Ein Heldenleben – Tod und Verklärung</h3>
-                    <p>Inspelning av Richard Strauss Ein Heldenlebend och Tod und Verklärung med Göteborgs Symfoniorkester under ledning av Kent Nagano.</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/56IBnOxLX6vkuk8OR8gfX7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
+                    <p>
+                        Inspelning av Richard Strauss Ein Heldenlebend och Tod und Verklärung med Göteborgs Symfoniorkester under ledning av Kent Nagano.
+                    </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/56IBnOxLX6vkuk8OR8gfX7?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
 
                 <div class="project-5">
                     <h3>J. Sibelius: Symphony No. 1 & En Saga</h3>
-                    <p>Inspelning av Jean Sibelius simfoni nr. 1 och En Saga med Göteborgs Symfoniorkester under ledning av Santtu-Matias Rouvali.</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6nDePaX0Vb9q5FEovzEtLT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
+                    <p>
+                        Inspelning av Jean Sibelius simfoni nr. 1 och En Saga med Göteborgs Symfoniorkester under ledning av Santtu-Matias Rouvali.
+                    </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6nDePaX0Vb9q5FEovzEtLT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
 
                 <div class="project-6">
                     <h3>J. Sibelius: Symphony No. 5</h3>
-                    <p>Inspelning av JEan Sibelius simfoni nr. 5 med Göteborgs Symfoniorkester under ledning av Santtu-Matias Rouvali.</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2i6YgqeIbWD4z8DvdVZ2uZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
+                    <p>
+                        Inspelning av Jean Sibelius simfoni nr. 5 med Göteborgs Symfoniorkester under ledning av Santtu-Matias Rouvali.
+                    </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2i6YgqeIbWD4z8DvdVZ2uZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+
+                <div class="project-8">
+                    <h3>KlassiskBOBHUNDkonsert(Live GSO)</h3>
+                    <p>
+                        Live inspelning av en konsert med Bob hund och Göteborgs Symfoniker.
+                    </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4AhXlhYOCVWcmvxIbTYWfD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
 
                 <div class="project-7">
                     <h3>Johanna Fridolfsson: Sandvargen</h3>
-                    <p>Inspening av Johanna Fridolfssons barnopera Sandvargen med Göteborgs Operan.</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6xO8s2uby9w2KPt3rgpL7W?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
-
-                                        <!-- Anadir Disco Bob Hund -->
-                <div class="project-8">
-                    <h3>Once Around the World</h3>
-                    <p>Once Around the World</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zukt4lj6O7A?si=aVBznAf1u9Va-4Ju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>
+                        Inspening av Johanna Fridolfssons barnopera Sandvargen med Göteborgs Operan.
+                    </p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6xO8s2uby9w2KPt3rgpL7W?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
 
-                    <!-- Terminar -->
-                <div class="project-8">
-                    <h3>Once Around the World</h3>
-                    <p>Once Around the World</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zukt4lj6O7A?si=aVBznAf1u9Va-4Ju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="project-9">
+                    <h3>Mike Svoboda: Once Around the World</h3>
+                    <p>
+                        Världspremiär av <i>Once Around the World</i> skriven av Mike Svoboda med <i>Lucerne Festival Alumni Ensemble</i> och Mike Svoboda som dirigent och berättare. 09.04.2017 Neubad (11am), Luzern – Schweiz.
+                    </p>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/218328359?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mike Svoboda – Once Around the World (with English subtitles)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+
+                <div class="project-10">
+                    <h3>Olga Neuwirth: Trurliade – Zone Zero för slagverk solo och orkester</h3>
+                    <p>
+                        Världspremiär av <i>Trurliade – Zone Zero</i> för slagverk solo och orkester skriven av Olga Neuwirth med <i>Orchestra of the Luerne Festival Academy</i>. Dirigent Susanna Mälkki och slagverk solo Victor Hanna. 27.08.2016 KKL Luzern – Schweiz.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4FVyC69fozo?si=aNwXTpUUOgNtPeON" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
             </div>
         </section>
     </main>
-    <!-- Footer -->
+
+    <!-- Footer with contact details-->
     <footer>
-        <a href="mailto:someone@example.com"><i class="fa-solid fa-at"></i></a>
-        <a href="https://www.linkedin.com/in/joseraultenza/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/JoseRaul-TR" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.1971840845536!2d13.49895647665952!3d59.37973670698537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb3d6bb389945%3A0x1355778264d20f3b!2sV%C3%A4stra%20Torggatan%207%2C%20652%2025%20Karlstad!5e0!3m2!1ses!2sse!4v1738855000724!5m2!1ses!2sse" 
-        width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
+        <p>
+            &copy; José Raúl Tenza Ramírez
+            <br>
+            <a href="mailto:someone@example.com"><i class="fa-solid fa-at"></i></a>
+            <a href="https://www.linkedin.com/in/joseraultenza/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/JoseRaul-TR" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.197346302361!2d13.501531400000001!3d59.379734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb3d6bb389945%3A0x1355778264d20f3b!2sV%C3%A4stra%20Torggatan%207%2C%20652%2025%20Karlstad!5e0!3m2!1ssv!2sse!4v1739202517264!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </footer>
 
 </body>
 </html>

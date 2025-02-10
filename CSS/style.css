@@ -68,3 +68,41 @@ p {
     font-size: 1.2rem;
     font-style: normal;
 }
+
+/* Here begins expandable CV */
+.CV-container {
+  display: none; /* Dölj modalen som standard */
+  position: fixed; /* Placera modalen överst på sidan */
+  z-index: 1; /* Se till att modalen ligger ovanpå annat innehåll */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full bredd */
+  height: 100%; /* Full höjd */
+  overflow: auto; /* Aktivera scrollning om innehållet är för stort */
+  background-color: rgba(0, 0, 0, 0.4); /* Bakgrundsfärg med transparens */
+}
+
+.CV-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centrera modalen */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Justera bredden efter behov */
+  position: relative; /* För att kunna positionera stäng-knappen */
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Visa modalen när man klickar på knappen */
+.CV-container:target {
+  display: block;
+}
+/* Finish expandable CV */
