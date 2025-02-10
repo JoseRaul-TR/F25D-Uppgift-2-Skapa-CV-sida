@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <title>Profil sida</title>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+
+    <title>Uppgift 2  Skapa CV-sida</title>
 </head>
 <body>
     <!-- header -->
@@ -20,6 +21,7 @@
             <ul>
                 <li><a href="#">Hem</a></li>
                 <li><a href="#">Om mig</a></li>
+                <li><a href=#>Projekt</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
@@ -28,12 +30,12 @@
     <main>
         <section id="perfil">
             <div class="img-container">
-                <img src="ruta-a-tu-imagen-de-perfil.jpg" alt="José Raúl Tenza Ramírez– Profile picture">
+                <img src="./media/Profile-picture.jpeg" alt="José Raúl Tenza Ramírez– Profile picture">
             </div>
             <div class="text-container">
                 <h2>José Raúl Tenza Ramírez</h2>
                 <h3>Front-End utvecklare och musiker</h3>
-                <hr>
+                <!-- <hr>-->
                 <p>
                     Hej! Jag är José, en profesionell musiker som studerar Front-End utveckling. 
                     Valthorn <span style='font-size:20px;'>&#128239;</span> är instrumentet jag spelar sedan jag blev 7 år gammal, en gång i tiden. 
@@ -45,6 +47,13 @@
                     <a href="#">Detaljerad CV</a>
                 </p>
             </div>
+            <div class="CV-container">
+                <h2>Resumé</h2>
+                <!-- <hr> -->
+                <p>
+                    Texto CV
+                </p>
+            </div>
         </section>
 
         <section id="projects">
@@ -52,13 +61,14 @@
             <div class="projects-container">
 
                 <div class="project-1">
-                    <img src="ruta-a-imagen-proyecto1.jpg" alt="Projekt 1">
+                    <img src="./media/Project-1.png" alt="Projekt 1">
                     <h3>Log in sida</h3>
                     <p>Det här är mitt första projekt som Front-End utvecklare.<br>
-                    Det är en enkel log in sida.</p>
+                    Här skapar jag en enkel log in sida.</p>
                     <a href="https://github.com/JoseRaul-TR/F25D-Upgift1-LogIn" target="_blank">Länk till projektets GitHub repository</a>
                 </div>
 
+                <!-- Anadir este proyecto! -->
                 <div class="project-2">
                     <img src="ruta-a-imagen-proyecto2.jpg" alt="Projekt 2">
                     <h3>Profilsida</h3>
@@ -67,39 +77,37 @@
                 </div>
                 
                 <div class="project-3">
-                    <img src="ruta-a-imagen-proyecto3.jpg" alt="Projekt 3">
-                    <h3>Disc 1</h3>
-                    <p>CD</p>
-                    <a href="#" target="_blank">Länk till projektets GitHub repository</a>
-                </div>
+                    <h3>R. Strauss: Eine Alpensinfonie</h3>
+                    <p>Inspelning av Richard Strauss Eine Alpensinfonie med Göteborgs Symfoniorkester under ledning av Kent Nagano.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/33Z8ldsWlFWfUybGRRmjRZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
 
                 <div class="project-4">
-                    <img src="ruta-a-imagen-proyecto4.jpg" alt="Projekt 4">
-                    <h3>Dic 2</h3>
-                    <p>CD</p>
-                    <a href="#" target="_blank">Länk till projektets GitHub repository</a>
-                </div>
+                    <h3>R. Strauss: Ein Heldenleben – Tod und Verklärung</h3>
+                    <p>Inspelning av Richard Strauss Ein Heldenlebend och Tod und Verklärung med Göteborgs Symfoniorkester under ledning av Kent Nagano.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/56IBnOxLX6vkuk8OR8gfX7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
 
                 <div class="project-5">
-                    <img src="ruta-a-imagen-proyecto5.jpg" alt="Projekt 5">
-                    <h3>Disc 3</h3>
-                    <p>CD</p>
-                    <a href="#" target="_blank">Länk till projektets GitHub repository</a>
-                </div>
+                    <h3>J. Sibelius: Symphony No. 1 & En Saga</h3>
+                    <p>Inspelning av Jean Sibelius simfoni nr. 1 och En Saga med Göteborgs Symfoniorkester under ledning av Santtu-Matias Rouvali.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6nDePaX0Vb9q5FEovzEtLT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
 
                 <div class="project-6">
-                    <img src="ruta-a-imagen-proyecto6.jpg" alt="Projekt 6">
-                    <h3>Disc 4</h3>
-                    <p>CD</p>
-                    <a href="#" target="_blank">Länk till projektets GitHub repository</a>
-                </div>
+                    <h3>J. Sibelius: Symphony No. 5</h3>
+                    <p>Inspelning av JEan Sibelius simfoni nr. 5 med Göteborgs Symfoniorkester under ledning av Santtu-Matias Rouvali.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2i6YgqeIbWD4z8DvdVZ2uZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
 
                 <div class="project-7">
-                    <img src="ruta-a-imagen-proyecto7.jpg" alt="Projekt 7">
-                    <h3>Video</h3>
+                    <h3>Johanna Fridolfsson: Sandvargen</h3>
+                    <p>Inspening av Johanna Fridolfssons barnopera Sandvargen med Göteborgs Operan.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6xO8s2uby9w2KPt3rgpL7W?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
+
+                    <!-- Terminar -->
+                <div class="project-8">
+                    <h3>Once Around the World</h3>
                     <p>Once Around the World</p>
-                    <a href="#" target="_blank">Länk till projektets GitHub repository</a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zukt4lj6O7A?si=aVBznAf1u9Va-4Ju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+
             </div>
         </section>
     </main>
