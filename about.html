@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
-
-    <title>Uppgift 2  Skapa CV-sida</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="./CSS/style.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <script type="text/javascript" src="./script.js" defer></script> 
+    
+        <title>Om mig</title>
+    </head>
 <body>
 
     <!-- header with navbar -->
     <header>
         <nav>
-            <a href="./home.html">Hem</a>
-            <a href="./about.html">Om mig</a>
-            <a href="./contact.html">Kontakt</a>
+            <ul>
+                <li><a href="./home.html" id="homeLink">Hem</a></li>
+                <li><a href="./about.html" id="aboutLink">Om mig</a></li>
+                <li><a href="./contact.html" id="contactLink">Kontakt</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- main -->
     <main>
+
         <h1>José Raúl Tenza Ramírez</h1>
-        <h2>Front-End utvecklare och musiker</h2>
-        <h2>Om mig</h2>
+        <h3>Front-End utvecklare och musiker</h3>
 
                     <!-- div for profile flexbox -->
                     <div class="profile-content">
@@ -38,202 +44,197 @@
                             <img src="./media/Profile-picture.jpeg" alt="José Raúl Tenza Ramírez–Profile picture">
                         </div>
 
-                       <!-- Text box with short description with link to pop-up CV -->
-                       <div class="text-about-me">
-                        <p>
-                            Hej!
-                            <br>
-                            Jag är José, en profesionell musiker som studerar Front-End utveckling. 
-                            Valthorn <span style='font-size: 1rem;'>📯</span> är instrumentet jag spelar sedan jag blev 7 år gammal, en gång i tiden. 
-                            Efter att jag tagit examen i musik bestämde jag mig för att försätta min karriär inom musiken och flyttade till Göteborg för att läsa en masterexamen i symfonisk orkesterspel vid Göteborgs Universitet. 
-                            Sedan dess har jag varit frilansande musiker och arbetat i flera orkestrar i Sverige samt utomlands under mer än 10 år. 
-                            Nu känner jag att det är dags att utveckla mig vidare i andra områden jag är också nyfiken på. 
-                            Därför läser jag ett Front-End utvecklingprogramm vid YH Borås<span style='font-size:1rem;'>🧑‍💻</span>. 
-                            Andra intressen förutom musik och mjukvaruutveckling jag har är natur, film och resor.
-                            <br>
-                            <a href="#detailedCV" class="link">Detaljerad CV</a>
-                        </p>
-                    </div>
-                    
-                    <!-- Pop-up CV -->
-                    <div id="detailedCV" class="CV-container">
-                        <div class="CV-content">
-                            <a href="#" class="close">&times;</a>
-                            <h2>Curriculum Vitae</h2>
-    
-                            <h3>Utbildning</h3>
-                                <ul>
-                                    <li>FrontEnd React utvecklare vid Yrkeshögskolan Borås <span style='font-size:1rem;'>🇸🇪</span> • Januari 2025 – December 2026.</li>
-                                    <li>Konstnärlig masterexamen i musik med inriktning i symfoniskt orkesterspel vid Göteborgs Universitet <span style='font-size:1rem;'>🇸🇪</span> • Augusti 2013 – April 2023.</li>
-                                    <li>Konstnärlig kandidatexamen i musik med inriktning valthorn vid Conservatorio Superior de música de Murcia <i>Manuel Massotti Littel</i> <span style='font-size:1rem;'>🇪🇸</span> • September 2008 – Juni 2012.</li>
-                                </ul>
-                            <hr>
-    
-                            <h3>Arbetslivserfarenhet</h3>
-                            
-                                <ul>
-                                    <li>
-                                        <h4>Wermland Opera <span style='font-size:1rem;'>🇸🇪</span></h4>
-                                        <ul>
-                                            <li>
-                                                Alternerande stämledare samt stämledare valthorn • Tidbegränsad anställning • Augusti 2024 – April 2025.
-                                            </li>
-                                            <li>
-                                                Stämledare och alternerande stämledare valthorn • Regelbunden gäst • Februari 2017 – April 2024.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Göteborgs Operan <span style='font-size:1rem;'>🇸🇪</span></h4>
-                                        <ul>
-                                            <li>
-                                                Tutti valthorn med 3:e horn plikt • Tidbegränsad anställning • Augusti 2022 – Juni 2024.
-                                            </li>
-                                            <li>
-                                                Tutti valthorn • Regelbunden gäst • November 2015 – December 2020.
-                                            </li>
-                                            <li>
-                                                Tutti valthorn • Tidbegränsad anställning • Oktober 2019 – Maj 2020.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Göteborgs Symfoniker <span style='font-size:1rem;'>🇸🇪</span></h4>
-                                        <ul>
-                                            <li>
-                                                Stämledare, tutti låg, hög och assistent valthorn • Regelbunden gäst • Mars 2014 – Februari 2024.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Läckö Slott Sommar Opera <span style='font-size:1rem;'>🇸🇪</span></h4>
-                                        <ul>
-                                            <li>
-                                                Stämledare valthorn • Juli 2022.
-                                            </li>
-                                            <li>
-                                                Stämledare valthorn • Juli – Augusti 2020.
-                                            </li>
-                                            <li>
-                                                Stämledare valthorn • Juli – Augusti 2019.
-                                            </li>
-                                            <li>
-                                                Alternerande stämledare valthorn • Juli – Augusti 2018.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Smålands Musik och Teater <span style='font-size:1rem;'>🇸🇪</span></h4>
-                                        <ul>
-                                            <li>
-                                                Alternerande stämledare valthorn • Tidbegränsad anställning • Augusti 2021 – Juni 2022.
-                                            </li>
-                                            <li>
-                                                Stämledare och alternerande stämledare valthorn • Regelbunden gäst • November 2017 – April 2024.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Norrköpings Symfoniorkester <span style='font-size:1rem;'>🇸🇪</span></h4>
-                                        <ul>
-                                            <li>
-                                                3:e valthorn • Gäst • Januari 2022.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Östgötamusiken <span style='font-size:1rem;'>🇸🇪</span></h4>
-                                        <ul>
-                                            <li>
-                                                Stämledare och alternerande stämledare valthorn • Regelbunden gäst • September 2020 – December 2021.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Lucerne Festival Alumni <span style='font-size:1rem;'>🇨🇭</span></h4>
-                                        <ul>
-                                            <li>
-                                                Valthorn • Medlem • Februari 2017 – Maj 2019.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Lucerne Festival Orchestra Academy <span style='font-size:1rem;'>🇨🇭</span></h4>
-                                        <ul>
-                                            <li>
-                                                Stämledare samt alternerande stämledare valthorn • Akademiker • Augusti – September 2016.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Kristiansand Symfoniorkester <span style='font-size:1rem;'>🇳🇴</span></h4>
-                                        <ul>
-                                            <li>
-                                                Assistent valthorn • Gäst • Januari 2015.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Orquesta Sinfónica de la Región de Murcia <span style='font-size:1rem;'>🇪🇸</span></h4>
-                                        <ul>
-                                            <li>
-                                                4:e valthorn • Gäst • April – Maj 2012.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Quinteto de Viento 'Iter Musicae' <span style='font-size:1rem;'>🇪🇸</span></h4>
-                                        <ul>
-                                            <li>
-                                                Valthorn • Medlem • September 2008 – Augusti 2013.
-                                            </li>
-                                        </ul>
-                                    </li>
-    
-                                    <li>
-                                        <h4>Orquesta Sinfónica de Jumilla <span style='font-size:1rem;'>🇪🇸</span></h4>
-                                        <ul>
-                                            <li>
-                                                Stämledare samt alternerande stämledare valthorn • Medlem • December 2011 – Juli 2013.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-    
-                            <h3>Kompetenser</h3>
-    
-                                <h4>Språk:</h4>
-                                    <ul>
-                                        <li>Spanska <span style='font-size:1rem;'>🇪🇸</span></li>
-                                        <li>Svenska <span style='font-size:1rem;'>🇸🇪</span></li>
-                                        <li>Engelska <span style='font-size:1rem;'>🇬🇧</span></li>
-                                    </ul>
+                        <!-- Text box with short description with link to pop-up CV -->
+                        <div class="text-about-me">
+                            <h2>Om mig</h2>
+                            <p>
+                                Hej!
+                                <br>
+                                Jag heter José och älskar musik! 
+                                Jag började spela valthorn <span style='font-size: 1rem;'>📯</span> när jag var sju och har sedan dess haft en fantastisk resa som musiker. 
+                                Efter min masterexamen i symfoniskt orkesterspel från Göteborgs Universitet har jag jobbat som frilansande musiker i över tio år, både i Sverige och utomlands.
+                                <br>
+                                Nu är det dags för ett nytt kapitel! 
+                                Jag studerar frontend-utveckling <span style='font-size:1rem;'>🧑‍💻</span> på YH Borås för att utveckla mina andra passioner. 
+                                Förutom musik brinner jag för natur, film och att resa.
+                                <br>
+                                <a href="#detailedCV" class="link">Detaljerad CV</a>
+                            </p>
                         </div>
+                        
+                        <!-- Pop-up CV -->
+                        <div id="detailedCV" class="CV-container">
+                            <div class="CV-content">
+                                <a href="#" class="close">&times;</a>
+                                <h2>Curriculum Vitae</h2>
+        
+                                <h3>Utbildning</h3>
+                                    <ul>
+                                        <li>FrontEnd React utvecklare vid Yrkeshögskolan Borås <span style='font-size:1rem;'>🇸🇪</span> • Januari 2025 – December 2026.</li>
+                                        <li>Konstnärlig masterexamen i musik med inriktning i symfoniskt orkesterspel vid Göteborgs Universitet <span style='font-size:1rem;'>🇸🇪</span> • Augusti 2013 – April 2023.</li>
+                                        <li>Konstnärlig kandidatexamen i musik med inriktning valthorn vid Conservatorio Superior de música de Murcia <i>Manuel Massotti Littel</i> <span style='font-size:1rem;'>🇪🇸</span> • September 2008 – Juni 2012.</li>
+                                    </ul>
+                                <hr>
+        
+                                <h3>Arbetslivserfarenhet</h3>
+                                
+                                    <ul>
+                                        <li>
+                                            <h4>Wermland Opera <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Alternerande stämledare samt stämledare valthorn • Tidbegränsad anställning • Augusti 2024 – April 2025.
+                                                </li>
+                                                <li>
+                                                    Stämledare och alternerande stämledare valthorn • Regelbunden gäst • Februari 2017 – April 2024.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Göteborgs Operan <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Tutti valthorn med 3:e horn plikt • Tidbegränsad anställning • Augusti 2022 – Juni 2024.
+                                                </li>
+                                                <li>
+                                                    Tutti valthorn • Regelbunden gäst • November 2015 – December 2020.
+                                                </li>
+                                                <li>
+                                                    Tutti valthorn • Tidbegränsad anställning • Oktober 2019 – Maj 2020.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Göteborgs Symfoniker <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Stämledare, tutti låg, hög och assistent valthorn • Regelbunden gäst • Mars 2014 – Februari 2024.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Läckö Slott Sommar Opera <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Stämledare valthorn • Juli 2022.
+                                                </li>
+                                                <li>
+                                                    Stämledare valthorn • Juli – Augusti 2020.
+                                                </li>
+                                                <li>
+                                                    Stämledare valthorn • Juli – Augusti 2019.
+                                                </li>
+                                                <li>
+                                                    Alternerande stämledare valthorn • Juli – Augusti 2018.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Smålands Musik och Teater <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Alternerande stämledare valthorn • Tidbegränsad anställning • Augusti 2021 – Juni 2022.
+                                                </li>
+                                                <li>
+                                                    Stämledare och alternerande stämledare valthorn • Regelbunden gäst • November 2017 – April 2024.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Norrköpings Symfoniorkester <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                            <ul>
+                                                <li>
+                                                    3:e valthorn • Gäst • Januari 2022.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Östgötamusiken <span style='font-size:1rem;'>🇸🇪</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Stämledare och alternerande stämledare valthorn • Regelbunden gäst • September 2020 – December 2021.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Lucerne Festival Alumni <span style='font-size:1rem;'>🇨🇭</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Valthorn • Medlem • Februari 2017 – Maj 2019.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Lucerne Festival Orchestra Academy <span style='font-size:1rem;'>🇨🇭</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Stämledare samt alternerande stämledare valthorn • Akademiker • Augusti – September 2016.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Kristiansand Symfoniorkester <span style='font-size:1rem;'>🇳🇴</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Assistent valthorn • Gäst • Januari 2015.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Orquesta Sinfónica de la Región de Murcia <span style='font-size:1rem;'>🇪🇸</span></h4>
+                                            <ul>
+                                                <li>
+                                                    4:e valthorn • Gäst • April – Maj 2012.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Quinteto de Viento 'Iter Musicae' <span style='font-size:1rem;'>🇪🇸</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Valthorn • Medlem • September 2008 – Augusti 2013.
+                                                </li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <h4>Orquesta Sinfónica de Jumilla <span style='font-size:1rem;'>🇪🇸</span></h4>
+                                            <ul>
+                                                <li>
+                                                    Stämledare samt alternerande stämledare valthorn • Medlem • December 2011 – Juli 2013.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+        
+                                <h3>Kompetenser</h3>
+        
+                                    <h4>Språk:</h4>
+                                        <ul>
+                                            <li>Spanska <span style='font-size:1rem;'>🇪🇸</span></li>
+                                            <li>Svenska <span style='font-size:1rem;'>🇸🇪</span></li>
+                                            <li>Engelska <span style='font-size:1rem;'>🇬🇧</span></li>
+                                        </ul>
+                            </div>
                     </div>
 
     </main>
 
     <!-- Footer with contact details-->
     <footer>
-        <h2>Kontakt</h2>
         <p>
-            &copy; José Raúl Tenza Ramírez
-            <br>
-            <a href="mailto:someone@example.com"><i class="fa-solid fa-at"></i>someone@example.com</a>
-            <a href="https://www.linkedin.com/in/joseraultenza/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>joseraultenza</a>
-            <a href="https://github.com/JoseRaul-TR" target="_blank"><i class="fa-brands fa-github"></i>JoseRaul-TR</a>
-            <i class="fa-solid fa-location-dot"></i> Karlstad, Sverige
+            2025 &copy; José Raúl Tenza Ramírez
         </p>
     </footer>
 
