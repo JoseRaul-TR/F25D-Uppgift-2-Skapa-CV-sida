@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        <script src="./script.js" defer></script> 
+    <script src="./script.js" defer></script> 
 
-        <title>Hem</title>
-    </head>
+    <title>Hem</title>
+</head>
 
 <body>
 
@@ -40,24 +39,21 @@
         
         <!-- Profile -->
         <section class="profile">
-            <!-- div for profile flexbox -->
-            <div class="profile-content">
-                <!-- Profile picture -->
-                <div class="img-container">
-                    <img src="./media/Profile-picture.jpeg" alt="José Raúl Tenza Ramírez–Profile picture">
-                </div>
+            <!-- Profile picture -->
+            <div class="img-container">
+                <img src="./media/Profile-picture.jpeg" alt="José Raúl Tenza Ramírez–Profile picture">
+            </div>
 
-                <!-- Text box with short description with link to pop-up CV -->
-                <div class="text-about-me">
-                    <h2>Välkommen!</h2>
-                    <p>
-                        Jag är José, en professionell musiker som studerar frontend-utveckling. 
-                        Nedan hittar du information om de projekt jag har medverkat i under min karriär. 
-                        På sidorna <a href="./about.html" id="aboutLink">OM MIG</a> och <a href="./contact.html" id="contactLink">KONTAKT</a> finns mer information om min utbildning och mitt CV, samt kontaktuppgifter.
-                        <br>
-                        Tack för ditt besök!
-                    </p>
-                </div>
+            <!-- Text box with short description with link to pop-up CV -->
+            <div class="text-about-me">
+                <h2>Välkommen!</h2>
+                <p>
+                    Jag är José, en professionell musiker som studerar frontend-utveckling. 
+                    Nedan hittar du information om de projekt jag har medverkat i under min karriär. 
+                    På sidorna <a href="./about.html" id="aboutLink">om mig</a> och <a href="./contact.html" id="contactLink">kontakt</a> finns mer information om min utbildning och mitt CV, samt kontaktuppgifter.
+                    <br><br>
+                    Tack för ditt besök!
+                </p>
             </div>
         </section>
 
@@ -140,113 +136,118 @@
                     </div>
                 </div>
 
-                <!-- project 5 -->
-                <div class="project">
-                    <h4>J. Sibelius: Symphony No. 1 & <i>En Saga</i></h4>
-                    <img src="./media/project-5.jpg" alt="Disc cover">
-                    <a href="#project5" class="link">Mer info</a>
-                </div>
-                <!-- Pop-up project 5 -->
-                <div id="project5" class="modal">
-                    <div class="modal-content">
-                        <a href="#" class="close">&times;</a>
-                        <h4>Jean Sibelius: Symphony No. 1 & <i>En Saga</i></h4>
-                        <p>
-                            Inspelning av Jean Sibelius Symfoni nr. 1 i e-moll, op. 39 och <i>En Saga</i> med Göteborgs Symfoniker under ledning av Santtu-Matias Rouvali.
-                        </p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6nDePaX0Vb9q5FEovzEtLT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                </div>
+                <details>
+                    <summary>Visa mer projekt</summary>
+                    <div class="more-projects">
+                        <!-- project 5 -->
+                        <div class="project">
+                            <h4>J. Sibelius: Symphony No. 1 & <i>En Saga</i></h4>
+                            <img src="./media/project-5.jpg" alt="Disc cover">
+                            <a href="#project5" class="link">Mer info</a>
+                        </div>
+                        <!-- Pop-up project 5 -->
+                        <div id="project5" class="modal">
+                            <div class="modal-content">
+                                <a href="#" class="close">&times;</a>
+                                <h4>Jean Sibelius: Symphony No. 1 & <i>En Saga</i></h4>
+                                <p>
+                                    Inspelning av Jean Sibelius Symfoni nr. 1 i e-moll, op. 39 och <i>En Saga</i> med Göteborgs Symfoniker under ledning av Santtu-Matias Rouvali.
+                                </p>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6nDePaX0Vb9q5FEovzEtLT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
 
-                <!-- project 6 -->
-                <div class="project">
-                    <h4>J. Sibelius: Symphony No. 5</h4>
-                    <img src="./media/project-6.jpg" alt="Disc cover">
-                    <a href="#project6" class="link">Mer info</a>
-                </div>
-                <!-- Pop-up project 6 -->
-                <div id="project6" class="modal">
-                    <div class="modal-content">
-                        <a href="#" class="close">&times;</a>
-                        <h4>Jean Sibelius: Symphony No. 5</h4>
-                        <p>
-                            Inspelning av Jean Sibelius Symfoni nr. 5 i Es-Dur, op. 82 med Göteborgs Symfoniker under ledning av Santtu-Matias Rouvali.
-                        </p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2i6YgqeIbWD4z8DvdVZ2uZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                </div>
+                        <!-- project 6 -->
+                        <div class="project">
+                            <h4>J. Sibelius: Symphony No. 5</h4>
+                            <img src="./media/project-6.jpg" alt="Disc cover">
+                            <a href="#project6" class="link">Mer info</a>
+                        </div>
+                        <!-- Pop-up project 6 -->
+                        <div id="project6" class="modal">
+                            <div class="modal-content">
+                                <a href="#" class="close">&times;</a>
+                                <h4>Jean Sibelius: Symphony No. 5</h4>
+                                <p>
+                                    Inspelning av Jean Sibelius Symfoni nr. 5 i Es-Dur, op. 82 med Göteborgs Symfoniker under ledning av Santtu-Matias Rouvali.
+                                </p>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2i6YgqeIbWD4z8DvdVZ2uZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
 
-                <!-- project 7 -->
-                <div class="project">
-                    <h4>bob hund: KlassiskBOBHUNDkonsert(Live GSO)</h4>
-                    <img src="./media/project-7.jpg" alt="Disc cover">
-                    <a href="#project7" class="link">Mer info</a>
-                </div>
-                <!-- Pop-up project 7 -->
-                <div id="project7" class="modal">
-                    <div class="modal-content">
-                        <a href="#" class="close">&times;</a>
-                        <h4>bob hund: KlassiskBOBHUNDkonsert(Live GSO)</h4>
-                        <p>
-                            Live inspelning av en konsert med Bob hund och Göteborgs Symfoniker.
-                        </p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4AhXlhYOCVWcmvxIbTYWfD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                </div>
+                        <!-- project 7 -->
+                        <div class="project">
+                            <h4>bob hund: KlassiskBOBHUNDkonsert(Live GSO)</h4>
+                            <img src="./media/project-7.jpg" alt="Disc cover">
+                            <a href="#project7" class="link">Mer info</a>
+                        </div>
+                        <!-- Pop-up project 7 -->
+                        <div id="project7" class="modal">
+                            <div class="modal-content">
+                                <a href="#" class="close">&times;</a>
+                                <h4>bob hund: KlassiskBOBHUNDkonsert(Live GSO)</h4>
+                                <p>
+                                    Live inspelning av en konsert med Bob hund och Göteborgs Symfoniker.
+                                </p>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4AhXlhYOCVWcmvxIbTYWfD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
 
-                <!-- project 8 -->
-                <div class="project">
-                    <h4>J. Fridolfsson: <i>Sandvargen</i></h4>
-                    <img src="./media/project-8.jpg" alt="Disc cover">
-                    <a href="#project8" class="link">Mer info</a>
-                </div>
-                <!-- Pop-up project 8 -->
-                <div id="project8" class="modal">
-                    <div class="modal-content">
-                        <a href="#" class="close">&times;</a>
-                        <h4>Johanna Fridolfsson: <i>Sandvargen</i></h4>
-                        <p>
-                            Inspening av Johanna Fridolfssons barnopera <i>Sandvargen</i> med Göteborgs Operan.
-                        </p>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6xO8s2uby9w2KPt3rgpL7W?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                </div>
+                        <!-- project 8 -->
+                        <div class="project">
+                            <h4>J. Fridolfsson: <i>Sandvargen</i></h4>
+                            <img src="./media/project-8.jpg" alt="Disc cover">
+                            <a href="#project8" class="link">Mer info</a>
+                        </div>
+                        <!-- Pop-up project 8 -->
+                        <div id="project8" class="modal">
+                            <div class="modal-content">
+                                <a href="#" class="close">&times;</a>
+                                <h4>Johanna Fridolfsson: <i>Sandvargen</i></h4>
+                                <p>
+                                    Inspening av Johanna Fridolfssons barnopera <i>Sandvargen</i> med Göteborgs Operan.
+                                </p>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6xO8s2uby9w2KPt3rgpL7W?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
 
-                <!-- project 9 -->
-                <div class="project">
-                    <h4>M. Svoboda: <i>Once Around the World</i></h4>
-                    <img src="./media/project-9.jpg" alt="Concert picture">
-                    <a href="#project9" class="link">Mer info</a>
-                </div>
-                <!-- Pop-up project 9 -->
-                <div id="project9" class="modal">
-                    <div class="modal-content">
-                        <a href="#" class="close">&times;</a>
-                        <h4>Mike Svoboda: <i>Once Around the World</i></h4>
-                        <p>
-                            Världspremiär av <i>Once Around the World</i> skriven av Mike Svoboda med Lucerne Festival Alumni Ensemble och Mike Svoboda som dirigent och berättare. 09.04.2017 Neubad (11am), Luzern – Schweiz.
-                        </p>
-                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/218328359?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mike Svoboda – Once Around the World (with English subtitles)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                    </div>
-                </div>
+                        <!-- project 9 -->
+                        <div class="project">
+                            <h4>M. Svoboda: <i>Once Around the World</i></h4>
+                            <img src="./media/project-9.jpg" alt="Concert picture">
+                            <a href="#project9" class="link">Mer info</a>
+                        </div>
+                        <!-- Pop-up project 9 -->
+                        <div id="project9" class="modal">
+                            <div class="modal-content">
+                                <a href="#" class="close">&times;</a>
+                                <h4>Mike Svoboda: <i>Once Around the World</i></h4>
+                                <p>
+                                    Världspremiär av <i>Once Around the World</i> skriven av Mike Svoboda med Lucerne Festival Alumni Ensemble och Mike Svoboda som dirigent och berättare. 09.04.2017 Neubad (11am), Luzern – Schweiz.
+                                </p>
+                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/218328359?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mike Svoboda – Once Around the World (with English subtitles)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                            </div>
+                        </div>
 
-                <!-- project 10 -->
-                <div class="project">
-                    <h4>O. Neuwirth: <i>Trurliade – Zone Zero</i></h4>
-                    <img src="./media/project-10.jpg" alt="Concert picture">
-                    <a href="#project10" class="link">Mer info</a>
-                </div>
-                <!-- Pop-up project 9 -->
-                <div id="project10" class="modal">
-                    <div class="modal-content">
-                        <a href="#" class="close">&times;</a>
-                        <h4>Olga Neuwirth: <i>Trurliade – Zone Zero</i></h4>
-                        <p>
-                            Världspremiär av <i>Trurliade – Zone Zero</i> för slagverk solo och orkester skriven av Olga Neuwirth med Orchestra of the Luerne Festival Academy. Dirigent Susanna Mälkki och slagverk solo Victor Hanna. 27.08.2016 KKL Luzern – Schweiz.
-                        </p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4FVyC69fozo?si=aNwXTpUUOgNtPeON" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <!-- project 10 -->
+                        <div class="project">
+                            <h4>O. Neuwirth: <i>Trurliade – Zone Zero</i></h4>
+                            <img src="./media/project-10.jpg" alt="Concert picture">
+                            <a href="#project10" class="link">Mer info</a>
+                        </div>
+                        <!-- Pop-up project 10 -->
+                        <div id="project10" class="modal">
+                            <div class="modal-content">
+                                <a href="#" class="close">&times;</a>
+                                <h4>Olga Neuwirth: <i>Trurliade – Zone Zero</i></h4>
+                                <p>
+                                    Världspremiär av <i>Trurliade – Zone Zero</i> för slagverk solo och orkester skriven av Olga Neuwirth med Orchestra of the Luerne Festival Academy. Dirigent Susanna Mälkki och slagverk solo Victor Hanna. 27.08.2016 KKL Luzern – Schweiz.
+                                </p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4FVyC69fozo?si=aNwXTpUUOgNtPeON" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </details>
             </div>
         </section>
     </main>

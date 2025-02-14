@@ -1,10 +1,9 @@
-/* Common style for the three different sites*/
-
+/* Common styles */
 * {
     box-sizing: border-box;
-    border: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
@@ -14,31 +13,29 @@ body {
 
 header {
   background-color: #f0f0f0; /* Light gray background */
-  position: fixed; /* Sticky positioning */
+  position: sticky; /* Sticky positioning */
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100; /* Ensure it's on top of other content */
-  padding: 10px 0; /* Add some padding */
+  padding: 0.7rem 0;
 }
 
 nav ul {
   list-style: none; /* Remove bullet points */
-  margin: 0;
-  padding: 0;
   display: flex; /* Arrange list items horizontally */
   justify-content: center; /* Center the links */
   text-transform: uppercase;
 }
 
 nav li {
-  margin: 0 15px; /* Add spacing between list items */
+  margin: 0 1rem; /* Add spacing between list items */
 }
 
 nav a {
   text-decoration: none; /* Remove underlines */
   color: #333; /* Dark gray text color */
-  padding: 5px 10px; /* Add padding to links */
+  padding: 0.5rem 1rem; /* Add padding to links */
 }
 
 nav a.active {
@@ -51,7 +48,7 @@ nav a.active {
 main {
   text-align: center;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 1.2rem;
 }
 
 h1, 
@@ -67,25 +64,22 @@ p {
 }
 
 .profile {
-  padding: 5px;
+  padding: 1rem;
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 .profile h2 {
-  margin-bottom: 20px;
-}
-
-.profile-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  margin-bottom: 1rem;
 }
 
 .img-container {
   overflow: hidden;
-  width: 50%;
+  width: 35%;
   order: 1;
-  border-radius: 50%;
+  border-radius: 12px;
 }
 
 .img-container img {
@@ -94,19 +88,6 @@ p {
   display: block;
 }
 
-.text-about-me {
-  flex: 1;
-  width: 50%;
-  order: 2;
-  margin: 1rem;
-  text-align: left;
-}
-
-.text-about-me a {
-  text-decoration: underline;
-}
-
-/* Por terminar diseño footer! */
 footer, 
 footer p {
   width: 100%;
@@ -115,38 +96,60 @@ footer p {
   background-color: #f0f0f0;
   color: #333;
 }
+/* Common Styles End */
 
-/* End common style for the three different sites */
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Style for elements in home.html */
+/* home.html styles*/
+.text-about-me {
+  flex: 1;
+  width: 50%;
+  order: 2;
+  padding: 1rem;
+  text-align: left;
+}
+
+.text-about-me a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #007bff;
+}
+
+.text-about-me a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
 .portfolio {
-  padding: 5px;
+  padding: 1rem;
 }
 
 .portfolio h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
-/* inicio con scroll lateral */
 .projects-container {
   display: flex;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  gap: 10px;
-  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
 }
 
 .project {
-  flex: 0 0 auto;
+  width: calc(25% - 1.5rem);
+  min-width: 250px;
   border: 1px solid maroon;
   border-radius: 12px;
+  margin-bottom: 1.5rem;
   padding: 1rem;
+  box-sizing: border-box;
   overflow: hidden;
-  min-width: 300px;
+  flex-shrink: 1;
+  flex-grow: 0;
 }
 
 .project h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 .project img,
@@ -158,7 +161,45 @@ footer p {
   border-radius: 12px;
 }
 
-/* Style modal pop-up projects */
+/* Details/Summary styles */
+details {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem; 
+}
+
+summary {
+  cursor: pointer;
+  padding: 1rem;
+  color: #007bff;
+  transition: color 0.3s ease;
+  list-style: none;
+  text-decoration: none;
+  text-align: initial;
+  font-weight: 500;
+}
+
+summary:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Extra projects container style */
+.more-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+details .more-projects .project {
+  min-width: 250px;
+  flex: 0 0 auto;
+  border: 1px solid maroon;
+  border-radius: 12px;
+}
+
+/* Modal styles pop-up projects */
 .modal {
   display: none; /* Initially hidden */
   position: fixed;
@@ -207,7 +248,7 @@ footer p {
     max-height: 80vh;
     border-radius: 12px;
     border: none;
-    margin: 10px auto;
+    margin: 0.8rem auto;
 }
 
 /* Target the modal using the :target pseudo-class */
@@ -216,41 +257,80 @@ footer p {
 }
 
 /* Style the "Open Modal" link */
-.project a {
+.project a.link {
     display: inline-block; /* Make it behave like a block element */
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin-top: 0.8rem;
+    padding: 0.4rem 0.8rem;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.project a.link:hover {
+  background-color: #0056b3;
 }
 /* End of style for elements in home.html */
 
+/* ––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* Style for elements in about.html */
+.text-intro-CV {
+  flex: 1;
+  width: 50%;
+  order: 2;
+  padding: 1rem;
+  text-align: left;
+}
+
+.text-intro-CV a {
+  display: block;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+  list-style: none;
+  text-align: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.text-intro-CV a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 /* Here begins pop-up with CV */
 .CV-container {
-  display: none; /* Dölj modalen som standard */
-  position: fixed; /* Placera modalen överst på sidan */
-  z-index: 1; /* Se till att modalen ligger ovanpå annat innehåll */
+  display: none; 
+  position: fixed; 
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full bredd */
-  height: 100%; /* Full höjd */
-  overflow: auto; /* Aktivera scrollning om innehållet är för stort */
-  background-color: rgba(0, 0, 0, 0.4); /* Bakgrundsfärg med transparens */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .CV-content {
   background-color: #fefefe;
-  margin: 15% auto; /* Centrera modalen */
-  padding: 20px;
+  margin: 5% auto;
+  padding: 2rem;
   border: 1px solid #888;
-  width: 80%; /* Justera bredden efter behov */
-  position: relative; /* För att kunna positionera stäng-knappen */
+  width: 90%;
+  max-width: 900px; 
+  position: relative; 
   border-radius: 12px;
   text-align: start;
+  font-family: 'Inter', sans-serif;
+}
+
+.CV-content h2,
+.CV-content h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
 }
 
 .close {
@@ -267,100 +347,25 @@ footer p {
 .CV-container:target {
   display: block;
 }
-/* Finish expandable CV */
+/* End expandable CV */
 /* End of style for elements in about.html */
 
-/* Style for elements in contact.html */
+/* –––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* Style for elements in contact.html */
 /* End of style for elements in contact.html */
 
-
+/* ––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Responsive Adjustments */
+/* End Responsice Adjustments */
 
-/* Mobile-first approach: Start with the smallest screen size and work up */
+/* –––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Very small screens (e.g., smartphones) */
-@media (max-width: 400px) {  /* Adjust breakpoint as needed */
-  .profile-content {
-      flex-direction: column; /* Stack image and text */
-      align-items: center; /* Center content horizontally */
-  }
+/* Print Responsive Adjustments */
+/* End Print Responsive Adjustments */
 
-  .img-container,
-  .text-about-me {
-      width: 100%; /* Full width */
-      order: 1; /* Image on top */
-      text-align: center; /* Center text within container */
-  }
+/* ––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  .projects-container {
-      flex-direction: column; /* Stack projects vertically */
-  }
-
-  .project {
-      width: 100%; /* Full width for each project */
-      margin-bottom: 10px; /* Add margin between stacked projects */
-  }
-}
-
-
-/* Small screens (e.g., tablets or larger smartphones) */
-@media (min-width: 401px) and (max-width: 768px) { /* Adjust breakpoints as needed */
-  .profile-content {
-      flex-direction: column; /* Stack image and text */
-      align-items: center; /* Center content horizontally */
-  }
-
-  .img-container,
-  .text-about-me {
-      width: 100%; /* Full width */
-      order: 1; /* Image on top */
-      text-align: center; /* Center text within container */
-  }
-
-  .projects-container {
-      flex-wrap: wrap; /* Allow wrapping of projects */
-      justify-content: center; /* Center projects horizontally */
-  }
-
-  .project {
-      width: calc(50% - 10px); /* Two projects per row with some gap */
-      margin-bottom: 10px; /* Add margin between stacked projects */
-  }
-}
-
-/* Medium screens (e.g., smaller laptops or tablets in landscape) */
-@media (min-width: 769px) and (max-width: 1024px) { /* Adjust breakpoints as needed */
- .profile-content {
-      flex-direction: row; /* Image and text side by side */
-      align-items: flex-start; /* Align items to the top */
-  }
-
-  .img-container,
-  .text-about-me {
-      width: 50%; /* Half width */
-      order: 1; /* Image on the left */
-      text-align: left; /* Text aligned to the left */
-  }
-  .projects-container {
-      flex-wrap: wrap; /* Allow wrapping of projects */
-      justify-content: center; /* Center projects horizontally */
-  }
-
-  .project {
-      width: calc(33.33% - 10px); /* Three projects per row with some gap */
-  }
-}
-
-/* Large screens (e.g., desktops) */
-@media (min-width: 1025px) { /* Adjust breakpoint as needed */
-  .projects-container {
-      flex-wrap: wrap; /* Allow wrapping of projects */
-      justify-content: center; /* Center projects horizontally */
-  }
-
-  .project {
-      width: calc(25% - 10px); /* Four projects per row with some gap */
-  }
-}
+/* Dark/Light Mode */
+/* End Dark/Light Mode */
