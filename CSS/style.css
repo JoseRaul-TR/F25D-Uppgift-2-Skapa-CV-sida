@@ -103,7 +103,7 @@ p {
   align-items: flex-start;
   padding: 2rem;
   width: 100%;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .profile h2 {
@@ -111,15 +111,18 @@ p {
 }
 
 .img-container {
-  width: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .emoji {
@@ -128,49 +131,90 @@ p {
   margin-left: 0.2rem;
 }
 
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 101;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: var(--dark-gray);
+}
+
 footer {
   width: 100%;
   padding: 1rem;
-  color: var(--dark-gray);
-  transition: color 0.3s ease;
-}
-
-footer p,
-footer i {
   text-align: center;
-  justify-content: center;
   color: var(--dark-gray);
-  transition: color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer i {
+footer p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+.social-icons a { 
+  color: inherit;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.social-icons a i { 
+  transition: color 0.3s ease;
   padding: 0.5rem;
 }
 
-footer i:visited {
+.social-icons a:hover i {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.social-icons a:visited i {
   color: inherit;
 }
+
 /* Common Styles End */
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* home.html styles*/
-.main .welcome-text {
+.welcome-text {
+  width: 45%;
+  flex-grow: 1;
   text-align: left;
   flex: 1;
 }
 
-.main .welcome-text a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--dark-gray);
-  padding: 0.5rem 1rem;
+.welcome-text a {
+  color: var(--primary-color);
   transition: color 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.main .welcome-text a:hover {
+.welcome-text a:hover {
+  color: var(--secondary-color);
   text-decoration: underline;
-  color: var(--primary-color);
 }
 
 .main .welcome-text a:visited {
@@ -251,7 +295,7 @@ color: white;
 }
 
 .project a.link:visited {
-color: inherit;
+color: white;
 }
 
 details {
@@ -302,51 +346,17 @@ summary:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
 
 .modal-img,
 .modal-content iframe {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
   margin: 10px auto;
   object-fit: contain;
-}
-
-.modal-content iframe {
-  width: 100%;
-  height: auto;
-}
-
-.close {
-  color: #aaa;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  z-index: 101;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.close:hover {
-  color: var(--dark-gray);
-}
-
-.modal-img, 
-.modal-content iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  margin: 10px auto;
-  object-fit: cover;
 }
 
 .modal:target {
@@ -383,29 +393,34 @@ summary:hover {
   display: none; 
   position: fixed; 
   z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0, 0, 0, 0.4);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 900px;
+  height: auto;
+  max-height: 90vh;
+  padding: 20px; 
+  margin-top: 30px;
+  overflow-y: auto; 
+  background-color: var(--light-modal-background);
+  border: 1px solid var(--dark-gray);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .CV-content {
-  background-color: white;
-  margin: 5% auto;
-  padding: 2rem;
-  border: 1px solid var(--dark-gray);
-  width: 90%;
-  max-width: 900px; 
-  position: relative; 
-  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   font-family: var(--font-family-inter), sans-serif;
+  color: var(--light-text-color);
 }
 
 .CV-content h2,
 .CV-content h3 {
   font-family: var(--font-family-poppins), sans-serif;
+  color: var(--light-text-color);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -413,60 +428,50 @@ summary:hover {
 .CV-content h4,
 .CV-content li {
   text-align: left;
+  color: var(--light-text-color);
 }
 
 .education,
 .professional-experience,
 .skills {
   font-family: var(--font-family-poppins), sans-serif;
+  color: var(--light-text-color);
   margin-bottom: 1rem;
 }
 
-.timeline {
+.CV-container .timeline {
   list-style: none;
   padding: 0;
   position: relative;
 }
 
-.timeline dt {
+.CV-container .timeline dt {
   margin-bottom: 0.5rem;
   text-align: left;
   font-weight: bold;
+  color: var(--light-text-color);
 }
 
-.timeline dd {
+.CV-container .timeline dd {
   padding-left: 0;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
   text-align: left;
   vertical-align: top;
+  color: var(--light-text-color);
 }
 
-.languages-list {
+.CV-container .languages-list {
   list-style: none;
   padding: 0;
 }
 
-.languages-list dt {
+.CV-container .languages-list dt {
   text-align: left;
   margin-bottom: 0.5rem;
   padding-left: 20px;
-}
+  color: var(--light-text-color);
 
-.close {
-  color: #aaa;
-  position: fixed;
-  top: 30px;
-  right: 20px;
-  z-index: 101;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3 ease;
-}
-
-.close:hover {
-  color: var(--dark-gray);
 }
 
 /* Visa modalen när man klickar på knappen */
@@ -525,31 +530,60 @@ summary:hover {
 
 /* Responsive Adjustments */
 @media (max-width: 767px) { /* Styles for small screens */
-  
+  nav a {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .img-container {
+    width: 60%;
+    height: 60%;
+    max-width: 250px;
+  }
+
+  .welcome-text {
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+
   .project {
-    flex-basis: calc(50% - 2rem);
+    flex-basis: calc(50% - 1rem);
     flex-direction: column;
     align-items: center;
     margin: 1rem 0;
   }
 
-  .img-container {
-    margin-bottom: 1rem;
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .welcome-text {
-    text-align: center;
+  .modal-img,
+  .modal-content iframe {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
   }
 
-  .profile {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      width: 100%;
+  .close {
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
   }
 
   .text-intro-CV, .contact-info {
-      max-width: 90%;
+      width: 90%;
       text-align: center;
   }
 
@@ -557,8 +591,22 @@ summary:hover {
       order: 2;
   }
 
-  .profile .img-container {
-      width: 200px;
+  .CV-container {
+    width: 95%;
+    margin: 5% auto;
+    overflow-y: auto;
+    max-height: 95vh;
+  }
+
+  .CV-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .CV-container .close {
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
   }
 }
 
@@ -568,7 +616,119 @@ summary:hover {
 
 /* Print Responsive Adjustments */
 
-  /* To do */
+@media print {
+  body {
+    font-family: var(--font-family-inter), sans-serif;
+    color: #000;
+    background-color: #fff;
+  }
+
+  header,
+  footer,
+  nav {
+    display: none;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+      color: #000; 
+  }
+
+  .projects-container,
+  .more-projects {
+      display: block; 
+  }
+
+  .project {
+      flex-basis: 100%; 
+      margin: 1rem 0; 
+  }
+
+  .project img,
+  .project iframe {
+      object-fit: contain; 
+      height: auto; 
+  }
+  .project a.link {
+      display: none;
+  }
+
+  .modal {
+      display: block !important; 
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      width: 100%;
+      height: auto;
+      background-color: transparent; 
+  }
+
+  .modal-content {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+  }
+
+  .modal-img,
+  .modal-content iframe {
+      margin: 0;
+  }
+
+  .close {
+      display: none;
+  }
+
+  .text-intro-CV,
+  .contact-info {
+      width: 100%;
+      text-align: left;
+  }
+
+  .CV-container {
+      display: block; 
+      position: relative; 
+      top: auto;
+      left: auto;
+      transform: none;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+  }
+
+  .CV-content {
+      max-width: 100%;
+      color: #000;
+  }
+
+  .CV-container h2,
+  .CV-container h3,
+  .CV-container .timeline dt,
+  .CV-container .timeline dd,
+  .CV-container .languages-list dt,
+  .contact-info h2 {
+      color: #000;
+  }
+
+  .CV-container .close {
+      display: none;
+  }
+}
 
 /* End Print Responsive Adjustments */
 
@@ -576,13 +736,13 @@ summary:hover {
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
+  /* Common dark mode styles  */
   body {
     background-color: var(--dark-background-color);
     color: var(--dark-text-color);
   }
 
-  header,
-  footer {
+  header {
     background-color: var(--dark-blur-background);
   }
 
@@ -595,7 +755,6 @@ summary:hover {
   .modal-content {
     background-color: var(--dark-modal-background);
     color: var(--dark-text-color);
-    border: var(--dark-text-color);
   }
 
   .close {
@@ -611,6 +770,33 @@ summary:hover {
     color: var(--dark-text-color);
   }
 
+  footer {
+    color: var(--dark-text-color);
+    background-color: var(--dark-blur-background); 
+  }
+
+  footer p {
+      color: var(--dark-text-color);
+  }
+
+
+  .social-icons a {
+      color: var(--dark-text-color);
+  }
+
+  .social-icons a i {
+      color: var(--dark-text-color);
+  }
+
+  .social-icons a:hover i {
+      color: var(--primary-color);
+  }
+
+  .social-icons a:visited i {
+      color: inherit; 
+  }
+
+  /* home.html specific dark mode styles */
   .welcome-text a,
   .project a.link,
   summary {
@@ -624,26 +810,34 @@ summary:hover {
 
   .project a.link {
     background-color: var(--primary-color);
+    color: white;
   }
 
   details {
     color: var(--dark-text-color);
   }
 
-  .CV-content {
+  /* about.html specific Dark Mode Styles */
+  .CV-container,
+  .CV-container .CV-content,
+  .CV-container h2,
+  .CV-container h3,
+  .CV-container .timeline dt,
+  .CV-container .timeline dd,
+  .CV-container .languages-list dt {
     background-color: var(--dark-modal-background);
     color: var(--dark-text-color);
-    border-color: var(--dark-text-color);
-}
+    border-color: #555;
+  }
 
-.timeline dt, 
-.languages-list dt {
-    color: var(--dark-text-color);
-}
+  .CV-container .close { 
+    color: var(--dark-text-color); 
+  }
 
-.contact-info h2,
-.contact-list a {
+  /* contact.html specific dark mode styles */
+  .contact-info h2,
+  .contact-list a {
     color: var(--dark-text-color);
-}
+  }
 }
 /* End Dark Mode */
