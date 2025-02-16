@@ -197,7 +197,7 @@ footer p {
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* home.html styles*/
+/* index.html styles*/
 .welcome-text {
   width: 45%;
   flex-grow: 1;
@@ -363,7 +363,7 @@ summary:hover {
   display: block;
 }
 
-/* End of style for elements in home.html */
+/* End of style for elements in index.html */
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -529,7 +529,8 @@ summary:hover {
 /* ––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Responsive Adjustments */
-@media (max-width: 767px) { /* Styles for small screens */
+/* Styles for small screens */
+@media (max-width: 767px) {
   nav a {
     font-size: 1rem;
     padding: 0.5rem 0.8rem;
@@ -796,7 +797,7 @@ summary:hover {
       color: inherit; 
   }
 
-  /* home.html specific dark mode styles */
+  /* index.html specific dark mode styles */
   .welcome-text a,
   .project a.link,
   summary {
