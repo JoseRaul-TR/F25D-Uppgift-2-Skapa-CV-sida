@@ -65,17 +65,7 @@ To view this website locally:
 .
 ├── Assets/
 │   └── Images/
-│       ├── Profile-picture.jpeg
-|       ├── Project-1.png
-|       ├── Project-2.png
-|       ├── Project-3.jpg
-|       ├── Project-4.jpg
-|       ├── Project-5.jpg
-|       ├── Project-6.jpg
-|       ├── Project-7.webp
-|       ├── Project-8.jpg
-|       ├── Project-9.jpg
-|       └──Project-10.jpg
+│       └── ... (project images, screenshots)
 ├── Pages/
 |   ├── about.html
 │   └── contact.html
