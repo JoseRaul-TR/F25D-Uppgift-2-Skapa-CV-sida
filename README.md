@@ -35,7 +35,7 @@ The site is designed to be responsive, adapting to different screen sizes, and i
 
 ## Screenshots
 
-*![Project-2](https://github.com/user-attachments/assets/24e702a9-4bd1-4634-a303-eeab283b7974)
+![Project-2](https://github.com/user-attachments/assets/24e702a9-4bd1-4634-a303-eeab283b7974)
 
 ## Technologies Used
 
