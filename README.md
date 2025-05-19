@@ -67,7 +67,7 @@ To view this website locally:
 │   └── Images/
 │       └── ... (project images, screenshots)
 ├── Pages/
-|   ├── about.html
+│   ├── about.html
 │   └── contact.html
 ├── Styles/
 │   ├── base.css
