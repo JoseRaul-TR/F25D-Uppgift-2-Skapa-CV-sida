@@ -1,0 +1,105 @@
+@media (prefers-color-scheme: dark) {
+  /* Common dark mode styles  */
+  body {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+  }
+
+  header {
+    background-color: var(--dark-blur-background);
+  }
+
+  nav a,
+  footer p,
+  footer i {
+    color: var(--dark-text-color);
+  }
+
+  .modal-content {
+    background-color: var(--dark-modal-background);
+    color: var(--dark-text-color);
+  }
+
+  .close {
+    color: var(--dark-text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  .profile h2 {
+    color: var(--dark-text-color);
+  }
+
+  footer {
+    color: var(--dark-text-color);
+    background-color: var(--dark-blur-background); 
+  }
+
+  footer p {
+      color: var(--dark-text-color);
+  }
+
+
+  .social-icons a {
+      color: var(--dark-text-color);
+  }
+
+  .social-icons a i {
+      color: var(--dark-text-color);
+  }
+
+  .social-icons a:hover i {
+      color: var(--primary-color);
+  }
+
+  .social-icons a:visited i {
+      color: inherit; 
+  }
+
+  /* index.html specific dark mode styles */
+  .welcome-text a,
+  .project a.link,
+  summary {
+    color: var(--dark-text-color);
+  }
+  
+  .project, 
+  details .more-projects .project {
+    border-color: #555;
+  }
+
+  .project a.link {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  details {
+    color: var(--dark-text-color);
+  }
+
+  /* about.html specific Dark Mode Styles */
+  .CV-container,
+  .CV-container .CV-content,
+  .CV-container h2,
+  .CV-container h3,
+  .CV-container .timeline dt,
+  .CV-container .timeline dd,
+  .CV-container .languages-list dt {
+    background-color: var(--dark-modal-background);
+    color: var(--dark-text-color);
+    border-color: #555;
+  }
+
+  .CV-container .close { 
+    color: var(--dark-text-color); 
+  }
+
+  /* contact.html specific dark mode styles */
+  .contact-info h2,
+  .contact-list a {
+    color: var(--dark-text-color);
+  }
+}

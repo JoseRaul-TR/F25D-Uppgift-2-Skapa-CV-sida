@@ -1,0 +1,38 @@
+.contact-info {
+  flex: 1;
+  order: 2;
+  text-align: left;
+  max-width: 60%;
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list i {
+  margin-right: 0.5rem;
+  width: 1.2rem;
+  text-align: center;
+}
+
+.contact-list a {
+  color: var(--dark-gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}

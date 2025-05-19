@@ -1,0 +1,113 @@
+@media print {
+  body {
+    font-family: var(--font-family-inter), sans-serif;
+    color: #000;
+    background-color: #fff;
+  }
+
+  header,
+  footer,
+  nav {
+    display: none;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+      color: #000; 
+  }
+
+  .projects-container,
+  .more-projects {
+      display: block; 
+  }
+
+  .project {
+      flex-basis: 100%; 
+      margin: 1rem 0; 
+  }
+
+  .project img,
+  .project iframe {
+      object-fit: contain; 
+      height: auto; 
+  }
+  .project a.link {
+      display: none;
+  }
+
+  .modal {
+      display: block !important; 
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      width: 100%;
+      height: auto;
+      background-color: transparent; 
+  }
+
+  .modal-content {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+  }
+
+  .modal-img,
+  .modal-content iframe {
+      margin: 0;
+  }
+
+  .close {
+      display: none;
+  }
+
+  .text-intro-CV,
+  .contact-info {
+      width: 100%;
+      text-align: left;
+  }
+
+  .CV-container {
+      display: block; 
+      position: relative; 
+      top: auto;
+      left: auto;
+      transform: none;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+  }
+
+  .CV-content {
+      max-width: 100%;
+      color: #000;
+  }
+
+  .CV-container h2,
+  .CV-container h3,
+  .CV-container .timeline dt,
+  .CV-container .timeline dd,
+  .CV-container .languages-list dt,
+  .contact-info h2 {
+      color: #000;
+  }
+
+  .CV-container .close {
+      display: none;
+  }
+}
