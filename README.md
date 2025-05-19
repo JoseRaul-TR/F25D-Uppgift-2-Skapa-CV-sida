@@ -99,8 +99,8 @@ The website automatically supports dark mode based on the user's system preferen
 
 ## Contact
 
--   **LinkedIn:** [Your LinkedIn Profile URL](https://www.linkedin.com/in/joseraultenza/)
--   **GitHub:** [Your GitHub Profile URL](https://github.com/JoseRaul-TR)
+-   **LinkedIn:** (https://www.linkedin.com/in/joseraultenza/)
+-   **GitHub:** (https://github.com/JoseRaul-TR)
 
 ---
 
