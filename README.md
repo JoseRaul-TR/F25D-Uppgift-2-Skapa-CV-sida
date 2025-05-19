@@ -60,6 +60,8 @@ To view this website locally:
 3.  Open the `index.html` file in your web browser.
 
 ## Project Structure
+
+```
 .
 ├── Assets/
 │   └── Images/
@@ -88,6 +90,7 @@ To view this website locally:
 │   └── dark-mode.css
 ├── index.html
 └── script.js
+```
 
 ## Print Styles
 
